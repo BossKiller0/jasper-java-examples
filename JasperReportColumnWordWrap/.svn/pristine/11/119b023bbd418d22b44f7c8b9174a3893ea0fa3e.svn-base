@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from user]]>
+	</queryString>
+	<field name="iduser" class="java.lang.Integer"/>
+	<field name="uname" class="java.lang.String"/>
+	<field name="passwd" class="java.lang.String"/>
+	<field name="utype" class="java.lang.String"/>
+	<field name="verified" class="java.lang.Boolean"/>
+	<field name="blocked" class="java.lang.Boolean"/>
+	<field name="iddept" class="java.lang.Integer"/>
+	<field name="role" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[iduser]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[uname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[passwd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[utype]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[verified]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[blocked]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[iddept]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[role]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="0" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{iduser}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{uname}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="FixRelativeToBottom" x="122" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{passwd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{utype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Boolean"><![CDATA[$F{verified}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Boolean"><![CDATA[$F{blocked}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="366" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{iddept}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{role}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="488" y="0" width="61" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

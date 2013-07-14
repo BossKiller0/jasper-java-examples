@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from student;]]>
+	</queryString>
+	<field name="idstudent" class="java.lang.Integer"/>
+	<field name="scholarno" class="java.lang.String"/>
+	<field name="formnumber" class="java.lang.String"/>
+	<field name="admissiondateschool" class="java.sql.Date"/>
+	<field name="admissiondateclass" class="java.sql.Date"/>
+	<field name="enrollmentno" class="java.lang.String"/>
+	<field name="examrollno" class="java.lang.String"/>
+	<field name="classrollno" class="java.lang.String"/>
+	<field name="firstname" class="java.lang.String"/>
+	<field name="middlename" class="java.lang.String"/>
+	<field name="lastname" class="java.lang.String"/>
+	<field name="idfather" class="java.lang.Integer"/>
+	<field name="idmother" class="java.lang.Integer"/>
+	<field name="idgd1" class="java.lang.Integer"/>
+	<field name="idgd2" class="java.lang.Integer"/>
+	<field name="idfeedivision" class="java.lang.Integer"/>
+	<field name="idfeediscountgp" class="java.lang.Integer"/>
+	<field name="idedusection" class="java.lang.Integer"/>
+	<field name="idedusemester" class="java.lang.Integer"/>
+	<field name="dob" class="java.sql.Date"/>
+	<field name="pob" class="java.lang.String"/>
+	<field name="previousyearfeedues" class="java.lang.Double"/>
+	<field name="previousschoolscholarno" class="java.lang.String"/>
+	<field name="previousschool" class="java.lang.String"/>
+	<field name="previousclass" class="java.lang.String"/>
+	<field name="previousresult" class="java.lang.String"/>
+	<field name="previousdivision" class="java.lang.String"/>
+	<field name="previouspercentage" class="java.lang.Double"/>
+	<field name="reasonofleaving" class="java.lang.String"/>
+	<field name="idmothertongue" class="java.lang.Integer"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="idsibling1" class="java.lang.Integer"/>
+	<field name="idsibling2" class="java.lang.Integer"/>
+	<field name="idsibling3" class="java.lang.Integer"/>
+	<field name="praddrhouseno" class="java.lang.String"/>
+	<field name="praddrstreet" class="java.lang.String"/>
+	<field name="praddrarea" class="java.lang.Integer"/>
+	<field name="praddrcity" class="java.lang.Integer"/>
+	<field name="praddrstate" class="java.lang.Integer"/>
+	<field name="praddrpin" class="java.lang.Integer"/>
+	<field name="pmaddrhouseno" class="java.lang.String"/>
+	<field name="pmaddrstreet" class="java.lang.String"/>
+	<field name="pmaddrarea" class="java.lang.Integer"/>
+	<field name="pmaddrcity" class="java.lang.Integer"/>
+	<field name="pmaddrstate" class="java.lang.Integer"/>
+	<field name="pmaddrpin" class="java.lang.Integer"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="weight" class="java.lang.Double"/>
+	<field name="height" class="java.lang.Double"/>
+	<field name="bloodgp" class="java.lang.String"/>
+	<field name="phydisab" class="java.lang.String"/>
+	<field name="idcategory" class="java.lang.Integer"/>
+	<field name="idreligion" class="java.lang.Integer"/>
+	<field name="idcaste" class="java.lang.Integer"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="nobrothers" class="java.lang.Integer"/>
+	<field name="nosisters" class="java.lang.Integer"/>
+	<field name="shift" class="java.lang.String"/>
+	<field name="idstaff" class="java.lang.String"/>
+	<field name="staffname" class="java.lang.String"/>
+	<field name="staffdesig" class="java.lang.String"/>
+	<field name="photo" class="java.lang.Object"/>
+	<field name="contactno" class="java.lang.Long"/>
+	<field name="idhostelbed" class="java.lang.Integer"/>
+	<field name="idvehiclearea" class="java.lang.Integer"/>
+	<field name="deltag" class="java.lang.Integer"/>
+	<field name="idacademicsession" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="20" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{middlename}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{lastname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{scholarno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{formnumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
